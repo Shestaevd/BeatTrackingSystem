@@ -55,7 +55,7 @@ namespace BeatSystem.scripts.BeatSystem.Logic
             _player.Stop();
         }
 
-        public void SetPlaybackPosition(double position)
+        public void SetPlaybackPosition(long position)
         {
             _track.Stream.Position = (long)(_track.GetFullLength() - (position * _track.Stream.WaveFormat.AverageBytesPerSecond));
         }
